@@ -1,32 +1,29 @@
 
-# 노무현**2 + 문재인**2 = 이정훈**2 >> 피타고라스
+# banana**2 + apple**2 = melon**2 >> 피타고라스
 
 while True:
-    민주당 = input().split(' ') # 민주당[6, 8, 10]
-    문재인 = int(민주당[0])
-    노무현 = int(민주당[1])
-    이정훈 = int(민주당[2])
+    fruits = input().split(' ') # fruits[6, 8, 10]
+    apple = int(fruits[0])
+    banana = int(fruits[1])
+    melon = int(fruits[2])
 
-    if 문재인==0 and 노무현==0 and 이정훈==0:
+    if apple==0 and banana==0 and melon==0:
         break
 
 
-    if not (이정훈 > 문재인 and 이정훈 > 노무현):
-        정훈 = 이정훈
-        # 문재인 > 노무현 ==> 문재인과 이정훈을 스위치한다
-        if 문재인 > 노무현:
-            이정훈 = 문재인
-            문재인 = 정훈
-        elif 노무현 > 문재인:
-            이정훈 = 노무현
-            노무현 = 정훈
+    if not (melon > apple and melon > banana):
+        small_melon = melon
+        # apple > banana ==> apple과 melon을 스위치한다
+        if apple > banana:
+            melon = apple
+            apple = small_melon
+        elif banana > apple:
+            melon = banana
+            banana = small_melon
 
-    if 문재인**2 + 노무현**2 == 이정훈**2:
+    if apple**2 + banana**2 == melon**2:
         print('right')
     else:
         print('wrong')
 
-        # 노무현 > 문재인 ==> 노무현과 이정훈을 스위치한다
-
-
-# 문장의 흐름을 파악하고
+        # banana > apple ==> banana와 melon을 스위치한다
